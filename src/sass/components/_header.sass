@@ -1,0 +1,49 @@
+.header
+	position: absolute
+	top: 0
+	left: 0
+	padding-top: 60px
+	width: 100%
+	z-index: 3
+	a
+		color: $dark 
+
+.logo
+	float: left
+	color: #FFF 
+	+f('lb',18)
+	text-transform: uppercase 
+
+.nav
+	position: absolute
+	top: -11px
+	left: 0
+	right: 0
+	text-align: center
+	&__list
+	&__item
+		text-transform: uppercase
+		vertical-align: top
+		display: inline-block
+		&:not(:first-child)
+			margin-left: 29px
+	&__link
+		padding: 11px 20px
+		border: 1px solid transparent
+		transition: border-color .3s ease-in-out
+		display: block
+		+hover
+			border-color: $dark-border 
+
+.phones
+	float: right
+	
+.phone
+	position: relative
+	padding-left: 45px
+	+f('lh',16)
+	text-transform: uppercase
+	.icon
+		position: absolute
+		left: 0
+		top: 0

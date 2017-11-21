@@ -1,0 +1,87 @@
+<!-- content -->
+<div class="content">
+	<div class="content__inner inner">
+		<div class="row">
+			<div class="col-img">
+				<!-- gallery -->
+				<div class="gallery">
+					<div class="gallery__img gallery__img_back">
+						<img src="./img/first-back.png" alt="img">
+					</div>
+					<div class="gallery__img gallery__img_middle">
+						<img src="./img/first-middle.png" alt="img">
+					</div>
+					<div class="gallery__img gallery__img_front">
+						<img src="./img/first-front.png" alt="img">
+					</div>
+				</div>
+				<!-- ¯\_(ツ)_/¯ -->
+			</div>
+			<div class="col-text">
+				<h2 class="title-lg">Получите <span class="pickout pickout_laser">БЕСПЛАТНУЮ</span> консультацию от нашего Ведущего Дизайнера</h2>
+				<h3 class="title-md">Заполните форму ниже и мы свяжемся с вами в течение 2 минут</h3>
+				<!-- form -->
+				<form action="/" class="form">
+					<div class="input">
+						<input type="text" name="name" placeholder="Как к вам обращаться?">
+					</div>
+					<div class="input">
+						<input type="text" name="phone" placeholder="Введите ваш номер телефона">
+					</div>
+					<div class="form__footer">
+						<button class="btn" type="submit">Получить консультацию</button>
+						<a href="#" class="btn btn_transparent"><span>Узнать больше</span></a>
+					</div>
+					<label class="form__checkbox checkbox">
+						<input name="confirm" type="checkbox">
+						<span class="checkbox__text">Нажимая на кнопку “Получить презентацию” я даю свое согласие на обработку персональных данных и соглашаюсь с политикой конфиденциальности</span>
+					</label>
+				</form>
+				<!-- ¯\_(ツ)_/¯ -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-text">
+				<h2 class="title-lg">Создаем <span class="pickout pickout_laser">комфорт</span> во всем</h2>
+				{% set texts = [
+					{
+						title: 'Дизайн-проект - основа будущего ремонта',
+						text: 'Заказывая услугу, вы получаете полный пакет технических документов для ремонтной бригады, чтобы ускорить и оптимизировать их работу, а так же помощь при подборе строительных материалов, финишных покрытий и технологий отделки, мебели, осветительных приборов и декоративных элементов'
+					},
+					{
+						title: 'Ваше участие в проекте сводится к минимуму',
+						text: 'Столько времени нужно, чтобы решить вопросы касательно дизайн-проекта и ремонта. Делаем свою работу сами и не беспокоим по пустякам'
+					},
+					{
+						title: 'Делаем работу "под ключ"',
+						text: 'Создадим дизайн проект, основываясь на ваших предпочтениях, реализуем и проконтролируем работы на объекте и сдадим его уже готовым. Экономия вашего времени и создание максимального комфорта при работе с нами - наш принцип'
+					},
+					{
+						title: 'Гарантия 5 лет',
+						text: 'Мы уверены в том, что мы делаем. Поэтому даем всем проектам гарантию 5 лет. Наша команда - только дипломированные специалисты, с большим опытом работы и соответствующей квалификацией'
+					}
+				] %}
+				{% for value in texts %}
+					<h3 class="title-sm">{{ value.title }}</h3>
+					<p>{{ value.text }}</p>
+				{% endfor %}
+			</div>
+			<div class="col-img">
+				<!-- gallery -->
+				<div class="gallery gallery_right">
+					<div class="gallery__img gallery__img_back">
+						<img src="./img/second-back.png" alt="img">
+					</div>
+					<div class="gallery__img gallery__img_middle">
+						<img src="./img/second-middle.png" alt="img">
+					</div>
+					<div class="gallery__img gallery__img_front">
+						<img src="./img/second-front.png" alt="img">
+					</div>
+				</div>
+				<!-- ¯\_(ツ)_/¯ -->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- ¯\_(ツ)_/¯ -->

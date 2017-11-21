@@ -1,0 +1,35 @@
+body
+	min-width: 1170px 
+	background: $white
+	+f('lr', 14, 18)
+	color: $dark 
+
+.title-md
+	color: #4c4c4c
+	+f('lb',18)
+	line-height: 1.7 
+.title-sm
+	+f('lb',16,18)
+	&:not(:first-child)
+		margin-top: 40px
+.title-lg
+	margin-bottom: 16px
+	+f('lb',30)
+	line-height: 1.6 
+	& + .title-sm
+		margin-top: 74px
+
+.pickout
+	padding: 0 14px
+	line-height: 50px 
+	color: white 
+	text-transform: uppercase
+	background-color: $laser 
+	display: inline-block
+	&_small
+		padding: 3px 10px
+		line-height: 1.2
+		text-transform: initial
+	&_white
+		color: $laser 
+		background-color: $white 

@@ -1,0 +1,81 @@
+.hero
+	padding: 229px 0 140px
+	font-size: 18px
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 50% 100%
+	
+.partners
+	font-size: 0
+	&:not(:first-child)
+		margin-top: 77px
+	&__icon
+		position: relative
+		vertical-align: middle
+		display: inline-block
+		&:not(:first-child)
+			margin-left: 60px
+		[class*="-hover"],
+		[class^="-hover"]
+			position: absolute
+			top: 0
+			left: 0
+			z-index: 1
+			opacity: 0
+			transition: opacity .3s
+			&:hover
+				opacity: 1
+
+.skills
+	position: relative
+	margin: 75px 0 0 55px
+	padding: 32px 0
+	font-size: 0
+	vertical-align: top
+	display: inline-block
+	&__line
+		position: absolute
+		left: 70px
+		right: 70px
+		height: 2px
+		background: $laser 
+		&:before,
+		&:after
+			position: absolute
+			content: ""
+			width: 2px
+			height: 18px
+			background: $laser 
+		&:before
+			left: 0
+		&:after
+			right: 0
+		&_top
+			top: 0
+			&:before,
+			&:after
+				top: 100%
+		&_bottom
+			bottom: 0
+			&:before,
+			&:after
+				bottom: 100%
+	&__item
+		padding: 16px 18px 28px
+		width: 170px
+		color: #282828
+		font-size: 14px
+		line-height: (20/14)
+		vertical-align: top
+		text-align: center
+		background-color: $white 
+		display: inline-block
+		&:not(:first-child)
+			margin-left: 29px
+	&__icon
+		height: 66px
+		line-height: 60px
+		.icon
+			vertical-align: middle
+	&__info
+		margin-top: 16px
